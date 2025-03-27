@@ -1,0 +1,82 @@
+/* Styles du header */
+.header {
+    background-color: #1d3a57;  /* Couleur bleu foncé */
+    color: white;
+    padding: 10px 20px;  /* Réduire la taille du padding pour le rendre plus compact */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header .logo-text {
+    font-size: 1.5rem;  /* Réduire la taille de la police */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header .menu {
+    display: flex;
+    gap: 20px;  /* Réduire l'écart entre les éléments */
+    list-style: none;
+    padding: 0;
+  }
+  
+  .header .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;  /* Réduire l'épaisseur de la police */
+    font-size: 0.9rem;  /* Réduire la taille de la police */
+  }
+  
+  .header .menu li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styles pour le menu déroulant */
+  .header .dropdown {
+    position: relative;
+  }
+  
+  .header .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1d3a57;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 200px;
+  }
+  
+  .header .dropdown-menu li a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .header .dropdown-menu li a:hover {
+    background-color: #f76c6c;  /* Rouge clair au survol */
+  }
+  
+  .header .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .header .icons a {
+    color: white;
+    margin-left: 15px;  /* Réduire l'écart entre les icônes */
+    font-size: 1.2rem;  /* Réduire la taille de l'icône */
+  }
+
+  
+  

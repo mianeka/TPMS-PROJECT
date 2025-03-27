@@ -1,0 +1,40 @@
+/* Hero section styles */
+.hero {
+    background-image: url('https://via.placeholder.com/1500x800');  /* Utilisez l'URL de l'image réelle ici */
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    // color: white;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn {
+    background-color: #f76c6c;  /* Couleur rouge pour le bouton */
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  }
+  

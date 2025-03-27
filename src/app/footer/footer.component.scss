@@ -1,0 +1,25 @@
+/* Footer styles */
+.footer {
+    background-color: #1d3a57;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;  /* Réduit l'espace interne du footer */
+    margin-bottom: 0;  /* Enlever tout espace en bas du footer */
+  }
+  
+  .footer .social-icons {
+    margin-top: 10px;
+  }
+  
+  .footer .social-icon {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  .footer .social-icon:hover {
+    text-decoration: underline;
+  }
+  

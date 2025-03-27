@@ -1,0 +1,36 @@
+/* Réinitialiser les marges et paddings */
+@import "~font-awesome/css/font-awesome.min.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;  /* Assurer que la hauteur de la page soit de 100% */
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* La page occupe toute la hauteur de l'écran */
+  }
+  main-content {
+    flex-grow: 1;  /* Le contenu principal occupe tout l'espace restant */
+    margin-bottom: 0;  /* Pas de marge en bas */
+    padding-bottom: 0; /* Pas de padding en bas */
+  }
+
+  .footer {
+    background-color: #1d3a57;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    position: fixed;
+    bottom: 0;  /* Colle le footer au bas de l'écran */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  
