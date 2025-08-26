@@ -3,7 +3,7 @@
     background-image: url('https://via.placeholder.com/1500x800');  /* Utilisez l'URL de l'image réelle ici */
     background-size: cover;
     background-position: center;
-    padding: 120px 20px;
+    padding: 20px 5px;
     // color: white;
     text-align: center;
   }
@@ -11,7 +11,7 @@
   .hero h1 {
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   
   .hero p {
@@ -34,7 +34,16 @@
     }
   
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
   
+
+  /* styles.css */
+.markdown-body img {
+  max-width: 100%;  /* l'image ne déborde jamais du container */
+  height: auto;     /* garde les proportions */
+  display: block;   /* évite les espaces indésirables */
+  margin: 1rem auto; /* optionnel : centre les images */
+  border-radius: 8px; /* optionnel : coins arrondis */
+}

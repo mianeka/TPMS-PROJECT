@@ -1,30 +1,29 @@
 <header class="header">
-    <!-- Logo supprimé -->
-    <nav class="nav">
-      <ul class="menu">
-        <li><a href="#">NEW</a></li>
-        <li><a href="#">BEST SELLERS</a></li>
-        <!-- Menu Bras avec sous-menu -->
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle">BRAS <i class="fa fa-chevron-down"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">T-Shirt Bras</a></li>
-            <li><a href="#">Wireless Bras</a></li>
-            <li><a href="#">Sports Bras</a></li>
-            <li><a href="#">Luxe Bras</a></li>
-          </ul>
-        </li>
-        <li><a href="#">UNDERWEAR</a></li>
-        <li><a href="#">SLEEP</a></li>
-        <li><a href="#">ACTIVE</a></li>
-        <li><a href="#">COLLECTIONS</a></li>
-        <li><a href="#">BUNDLES</a></li>
-        <li><a href="#">SALE</a></li>
-      </ul>
-      <div class="icons">
-        <a href="#" class="search-icon">🔍</a>
-        <a href="#" class="cart-icon">🛒</a>
-      </div>
-    </nav>
-  </header>
-  
+  <nav class="nav">
+    <a href="#" class="logo-text">MonSite</a>
+    
+    <ul class="menu" id="menu">
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Services</a></li>
+      <li class="dropdown">
+        <a href="#">Plus ▼</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Option 1</a></li>
+          <li><a href="#">Option 2</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="icons">
+      <a href="#"><i class="fa fa-user"></i></a>
+      <a href="#"><i class="fa fa-shopping-cart"></i></a>
+    </div>
+
+    <!-- Burger menu -->
+    <div class="burger" onclick="document.getElementById('menu').classList.toggle('show')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>

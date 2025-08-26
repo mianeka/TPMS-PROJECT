@@ -1,82 +1,128 @@
 /* Styles du header */
 .header {
-    background-color: #1d3a57;  /* Couleur bleu foncé */
-    color: white;
-    padding: 10px 20px;  /* Réduire la taille du padding pour le rendre plus compact */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .header .logo-text {
-    font-size: 1.5rem;  /* Réduire la taille de la police */
-    font-weight: bold;
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .header .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
+  background-color: #1d3a57; /* Couleur bleu foncé */
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.header .logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+/* Nav principal */
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Menu */
+.header .menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header .menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.header .menu li a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown */
+.header .dropdown {
+  position: relative;
+}
+
+.header .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1d3a57;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  min-width: 200px;
+}
+
+.header .dropdown-menu li a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.header .dropdown-menu li a:hover {
+  background-color: #f76c6c;
+}
+
+.header .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Icônes */
+.header .icons a {
+  color: white;
+  margin-left: 15px;
+  font-size: 1.2rem;
+}
+
+/* ---- Responsive ---- */
+
+/* Bouton menu burger (mobile) */
+.header .burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.header .burger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* Mobile : menu vertical */
+@media (max-width: 768px) {
   .header .menu {
-    display: flex;
-    gap: 20px;  /* Réduire l'écart entre les éléments */
-    list-style: none;
-    padding: 0;
-  }
-  
-  .header .menu li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 400;  /* Réduire l'épaisseur de la police */
-    font-size: 0.9rem;  /* Réduire la taille de la police */
-  }
-  
-  .header .menu li a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Styles pour le menu déroulant */
-  .header .dropdown {
-    position: relative;
-  }
-  
-  .header .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    display: none; /* masqué par défaut */
+    flex-direction: column;
+    gap: 10px;
     background-color: #1d3a57;
-    list-style: none;
-    padding: 10px 0;
-    margin: 0;
-    min-width: 200px;
-  }
-  
-  .header .dropdown-menu li a {
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .header .dropdown-menu li a:hover {
-    background-color: #f76c6c;  /* Rouge clair au survol */
-  }
-  
-  .header .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .header .icons a {
-    color: white;
-    margin-left: 15px;  /* Réduire l'écart entre les icônes */
-    font-size: 1.2rem;  /* Réduire la taille de l'icône */
+    position: absolute;
+    top: 60px; /* juste sous le header */
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
   }
 
-  
-  
+  .header .menu.show {
+    display: flex; /* affiché quand on clique sur le burger */
+  }
+
+  .header .burger {
+    display: flex; /* visible uniquement sur mobile */
+  }
+
+  .header .icons {
+    display: none; /* optionnel : cacher les icônes sur mobile */
+  }
+}

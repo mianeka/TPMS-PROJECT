@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { ProductSectionComponent } from './product-section/product-section.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
+import { MarkdownModule } from 'ngx-markdown';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+     MarkdownModule.forRoot({ loader: HttpClient })  // ⬅️ important
   ],
   providers: [],
   bootstrap: [AppComponent]
